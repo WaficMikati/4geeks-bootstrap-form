@@ -17,155 +17,125 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></script>
   </head>
-  <body>
-    <div class="container m-auto p-5">
-      <div class="card w-100">
-        <div class="card-header">
-          <span class="fs-1"><b>Payment form example</b></span>
-        </div>
-
-        <div class="card-body">
-          <div class="alert alert-danger">
-            <span>Some fields are missing</span>
+  <body class="vh-100 d-flex align-items-center">
+    <!-- Content -->
+    <div class="container">
+      <div class="card">
+        <form action="">
+          <div class="card-header">
+            <h3>Payment Form Example</h3>
           </div>
+          <div class="card-body">
+            <div class="alert alert-danger mb-3">Some fields are missing</div>
 
-          <div class="row mb-3">
-            <div class="col-5">
-              <div class="input-group">
-                <label for="card-number" class="input-group-text">Card Number</label>
-                <input
-                  type="number"
-                  name="card-number"
-                  id="card-number"
-                  class="form-control"
-                  placeholder="1234-5678-4321-9876"
-                />
+            <div class="row d-flex">
+              <div class="col">
+                <label for="card-number" class="form-label">Card Number</label>
+                <input type="tel" class="form-control" id="card-number" placeholder="XXXXXXXXXXXXXXXX" />
               </div>
-            </div>
-            <div class="col-3">
-              <div class="input-group">
-                <label for="card-number" class="input-group-text">CVC</label>
-                <input type="number" name="card-number" id="card-number" class="form-control" placeholder="000" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="input-group">
-                <div class="input-group">
-                  <span class="input-group-text">$</span>
-                  <input type="number" name="card-number" id="card-number" class="form-control" placeholder="00.00" />
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="row mb-3">
-            <div class="col">
-              <div class="input-group">
-                <label for="first-name" class="input-group-text">First Name</label>
-                <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Oscar" />
+              <div class="col">
+                <label for="cvc" class="form-label">CVC</label>
+                <input type="tel" class="form-control" id="cvc" placeholder="XXX" />
               </div>
-            </div>
-            <div class="col">
-              <div class="input-group">
-                <label for="last-name" class="input-group-text">Last Name</label>
-                <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Ramirez" />
-              </div>
-            </div>
-          </div>
 
-          <div class="row mb-3">
-            <div class="col-5">
-              <div class="input-group">
-                <label for="city" class="input-group-text">City</label>
-                <input type="text" name="city" id="city" class="form-control" placeholder="Barranquilla" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="input-group">
-                <label for="state" class="input-group-text">State</label>
-                <input type="text" name="state" id="state" class="form-control" placeholder="Bolivar" />
-              </div>
-            </div>
-            <div class="col">
-              <div class="input-group">
-                <label for="postal-code" class="input-group-text">Postal Code</label>
-                <input type="text" name="postal-code" id="postal-code" class="form-control" placeholder="123 456" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <div class="col-auto">
-              <div class="input-group">
-                <label for="card-type" class="input-group-text">Payment</label>
-                <div id="card-type" class="input-group-text">
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio1"
-                      value="option1"
-                    />
-                    <label class="form-check-label" for="inlineRadio1">
-                      <i class="fa-brands fa-cc-visa"></i>
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio2"
-                      value="option2"
-                    />
-                    <label class="form-check-label" for="inlineRadio2">
-                      <i class="fa-brands fa-cc-mastercard"></i>
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio3"
-                      value="option3"
-                    />
-                    <label class="form-check-label" for="inlineRadio3">
-                      <i class="fa-brands fa-cc-amex"></i>
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio4"
-                      value="option4"
-                    />
-                    <label class="form-check-label" for="inlineRadio3">
-                      <i class="fa-brands fa-cc-paypal"></i>
-                    </label>
-                  </div>
+              <div class="col">
+                <label for="amount" class="form-label">Amount</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="currencyAddon">$</span>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="0000.00"
+                    aria-label="Amount"
+                    aria-describedby="currencyAddon"
+                  />
                 </div>
               </div>
             </div>
 
-            <div class="col">
-              <div class="input-group">
-                <label for="message" class="input-group-text">Notes</label>
-                <textarea name="message" id="message" class="form-control"></textarea>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="text" name="first-name" id="first-name" class="form-control" />
+              </div>
+              <div class="col">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" name="last-name" id="first-name" class="form-control" />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <label for="city" class="form-label">City</label>
+                <input type="text" name="city" id="first-name" class="form-control" />
+              </div>
+              <div class="col">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Pick a state</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="Postal Code" class="form-label">Postal Code</label>
+                <input type="text" name="Postal Code" id="first-name" class="form-control" />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <label for="payment-method" class="form-label">Payment Methods</label>
+                <div class="form-control border-0 ps-0">
+                  <div class="d-inline bg-secondary rounded p-2 text-white fs-5" id="payment-method">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="mastercard"
+                        value="mastercard"
+                      />
+                      <label class="form-check-label" for="mastercard">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="payment-method" id="visa" value="visa" />
+                      <label class="form-check-label" for="visa">
+                        <i class="fa-brands fa-cc-visa"></i>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="payment-method" id="cc" value="cc" />
+                      <label class="form-check-label" for="cc">
+                        <i class="fa-brands fa-cc-diners-club"></i>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="payment-method" id="amex" value="amex" />
+                      <label class="form-check-label" for="amex">
+                        <i class="fa-brands fa-cc-amex"></i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="messsage" id="message" rows="3" class="form-control"></textarea>
+                <div class="form-text">Add any notes here.</div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="card-footer text-end p-3">
-          <button class="btn btn-secondary">Cancel</button>
-          <button class="btn btn-primary">Submit</button>
-        </div>
+          <div class="card-footer text-end">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary">Send</button>
+          </div>
+        </form>
       </div>
     </div>
 
