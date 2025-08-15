@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,6 +20,7 @@
   </head>
   <body class="vh-100 d-flex align-items-center">
     <!-- Content -->
+    <!-- Main element -->
     <div class="container">
       <div class="card">
         <form action="">
@@ -32,12 +33,22 @@
             <div class="row d-flex">
               <div class="col">
                 <label for="card-number" class="form-label">Card Number</label>
-                <input type="tel" class="form-control" id="card-number" placeholder="XXXXXXXXXXXXXXXX" />
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="card-number"
+                  placeholder="XXXXXXXXXXXXXXXX"
+                />
               </div>
 
               <div class="col">
                 <label for="cvc" class="form-label">CVC</label>
-                <input type="tel" class="form-control" id="cvc" placeholder="XXX" />
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="cvc"
+                  placeholder="XXX"
+                />
               </div>
 
               <div class="col">
@@ -58,18 +69,33 @@
             <div class="row mb-3">
               <div class="col">
                 <label for="first-name" class="form-label">First Name</label>
-                <input type="text" name="first-name" id="first-name" class="form-control" />
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  class="form-control"
+                />
               </div>
               <div class="col">
                 <label for="last-name" class="form-label">Last Name</label>
-                <input type="text" name="last-name" id="first-name" class="form-control" />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="first-name"
+                  class="form-control"
+                />
               </div>
             </div>
 
             <div class="row mb-3">
               <div class="col">
                 <label for="city" class="form-label">City</label>
-                <input type="text" name="city" id="first-name" class="form-control" />
+                <input
+                  type="text"
+                  name="city"
+                  id="first-name"
+                  class="form-control"
+                />
               </div>
               <div class="col">
                 <label for="state" class="form-label">State</label>
@@ -82,15 +108,25 @@
               </div>
               <div class="col">
                 <label for="Postal Code" class="form-label">Postal Code</label>
-                <input type="text" name="Postal Code" id="first-name" class="form-control" />
+                <input
+                  type="text"
+                  name="Postal Code"
+                  id="first-name"
+                  class="form-control"
+                />
               </div>
             </div>
 
             <div class="row mb-3">
               <div class="col">
-                <label for="payment-method" class="form-label">Payment Methods</label>
+                <label for="payment-method" class="form-label"
+                  >Payment Methods</label
+                >
                 <div class="form-control border-0 ps-0">
-                  <div class="d-inline bg-secondary rounded p-2 text-white fs-5" id="payment-method">
+                  <div
+                    class="d-inline bg-secondary rounded p-2 text-white fs-5"
+                    id="payment-method"
+                  >
                     <div class="form-check form-check-inline">
                       <input
                         class="form-check-input"
@@ -104,19 +140,37 @@
                       </label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="payment-method" id="visa" value="visa" />
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="visa"
+                        value="visa"
+                      />
                       <label class="form-check-label" for="visa">
                         <i class="fa-brands fa-cc-visa"></i>
                       </label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="payment-method" id="cc" value="cc" />
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="cc"
+                        value="cc"
+                      />
                       <label class="form-check-label" for="cc">
                         <i class="fa-brands fa-cc-diners-club"></i>
                       </label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="payment-method" id="amex" value="amex" />
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="payment-method"
+                        id="amex"
+                        value="amex"
+                      />
                       <label class="form-check-label" for="amex">
                         <i class="fa-brands fa-cc-amex"></i>
                       </label>
@@ -126,7 +180,12 @@
               </div>
               <div class="col">
                 <label for="message" class="form-label">Message</label>
-                <textarea name="messsage" id="message" rows="3" class="form-control"></textarea>
+                <textarea
+                  name="messsage"
+                  id="message"
+                  rows="3"
+                  class="form-control"
+                ></textarea>
                 <div class="form-text">Add any notes here.</div>
               </div>
             </div>
